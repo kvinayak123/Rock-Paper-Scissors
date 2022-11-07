@@ -1,0 +1,106 @@
+body {
+  background-image: url(img/Background.jpg);
+  background-size: cover;
+  font-family: Marker Felt, fantasy;
+}
+header {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 50px;
+}
+
+.buttons {
+  display: flex;
+
+  justify-content: center;
+  flex-basis: 1px;
+  gap: 5px;
+}
+
+.but {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  border-color: black;
+  border-width: 5px;
+  font-family: Marker Felt, fantasy;
+  font-size: 30px;
+  border-radius: 20px;
+}
+.but {
+  transition-duration: 1s;
+}
+
+.but:hover {
+  cursor: pointer;
+  background-size: cover;
+  transition-duration: 0.4s;
+}
+
+.rock:hover {
+  background-image: url(img/rock.png);
+  text-indent: -120px;
+}
+.paper:hover {
+  background-image: url(img/paper.png);
+  text-indent: -120px;
+}
+.scissors:hover {
+  background-image: url(img/scissors.png);
+  text-indent: -100px;
+}
+
+.namecolumn {
+  display: flex;
+  gap: 350px;
+  margin-left: 150px;
+  justify-content: center;
+}
+
+.box1 {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: black;
+  color: aliceblue;
+  padding: 5px;
+}
+.status {
+  display: flex;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: aliceblue;
+  gap: 90px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  bottom: px;
+}
+.mainStatus {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
+}
+footer {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  background: black;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  left: 0px;
+}

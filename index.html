@@ -4,15 +4,36 @@
     <script src="script.js" defer></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
+    <title>Rock Paper Scissor</title>
   </head>
   <body>
-    <button class="rock">Rock</button>
-    <button class="paper">Paper</button>
-    <button class="scissors">Scissors</button>
-    <div><h>User Points</h> <h>10</h></div>
-    <div><h>Computer Points</h> <h>20</h></div>
-    <div>User selection</div>
+    <header>Rock Paper Scissor</header>
+    <div class="buttons">
+      <button class="rock but">Rock</button>
+      <button class="paper but">Paper</button>
+      <button class="scissors but">Scissor</button>
+    </div>
+    <div class="namecolumn">
+      <h1>UserName</h1>
+      <h1>Computer</h1>
+    </div>
+    <div class="namecolumn">
+      <div class="box1">
+        <h1>Score</h1>
+        <h1 type="number" class="box user">0</h1>
+      </div>
+      <div class="box1">
+        <h1>Score</h1>
+        <h1 type="number" class="box cpu">0</h1>
+      </div>
+    </div>
+    <div class="status">
+      <h1 class="userSelection"></h1>
+      <h1 class="mainStatus">Select One ⬆︎!</h1>
+      <h1 class="cpuSelection"></h1>
+    </div>
+    <footer>Vinayak Project 2022 Copyright ©</footer>
   </body>
 </html>

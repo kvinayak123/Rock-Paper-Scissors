@@ -1,22 +1,41 @@
+let userScore = document.querySelector(".user").textContent;
+let cpuScore = document.querySelector(".cpu").textContent;
+let statusText = document.querySelector(".status").textContent;
+let newNum = document.querySelector(".cpu").textContent;
+let scoreUser = 0;
+let scoreCpu = 0;
+
 let makeDecision = function (playerChoice) {
   let computerValueArray = [0, "rock", "paper", "scissors"];
   let computerValue = Math.floor(Math.random() * 3) + 1;
   let comChoice = computerValueArray[computerValue];
+  document.querySelector(".cpuSelection").textContent = comChoice;
+  document.querySelector(".userSelection").textContent = playerChoice;
   console.log(`Computer= ${comChoice},Player= ${playerChoice}`);
+
   if (comChoice == playerChoice) {
-    console.log("Draw");
+    document.querySelector(".mainStatus").textContent = "It is a draw";
   } else if (comChoice == "rock") {
     playerChoice == "paper"
-      ? console.log("Player Wins")
-      : console.log("Com Wins");
+      ? (document.querySelector(".mainStatus").textContent = "Player Wins")
+      : (document.querySelector(".mainStatus").textContent = "Computer Wins");
   } else if (comChoice == "paper") {
     playerChoice == "scissors"
-      ? console.log("Player Wins")
-      : console.log("Com Wins");
+      ? (document.querySelector(".mainStatus").textContent = "Player Wins")
+      : (document.querySelector(".mainStatus").textContent = "Computer Wins");
   } else if (comChoice == "scissors") {
     playerChoice == "rock"
-      ? console.log("Player Wins")
-      : console.log("Com Wins");
+      ? (document.querySelector(".mainStatus").textContent = "Player Wins")
+      : (document.querySelector(".mainStatus").textContent = "Computer Wins");
+  }
+  if (document.querySelector(".mainStatus").textContent == "Computer Wins") {
+    scoreCpu++;
+    document.querySelector(".cpu").textContent = scoreCpu;
+  } else if (
+    document.querySelector(".mainStatus").textContent == "Player Wins"
+  ) {
+    scoreUser++;
+    document.querySelector(".user").textContent = scoreUser;
   }
 };
 
