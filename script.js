@@ -4,6 +4,10 @@ let statusText = document.querySelector(".status").textContent;
 let newNum = document.querySelector(".cpu").textContent;
 let scoreUser = 0;
 let scoreCpu = 0;
+document.querySelector(".username").textContent = prompt(
+  "Enter your Name",
+  "Enter here"
+);
 
 let makeDecision = function (playerChoice) {
   let computerValueArray = [0, "rock", "paper", "scissors"];
